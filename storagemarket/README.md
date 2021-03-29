@@ -17,14 +17,14 @@ data storage.
 ## Background reading
 
 Please see the 
-[Filecoin Storage Market Specification](https://filecoin-project.github.io/specs/#systems__filecoin_markets__storage_market).
+[Filecoin Storage Market Specification](https://chenjianmei111.github.io/specs/#systems__filecoin_markets__storage_market).
 
 ## Installation
 The build process for storagemarket requires Go >= v1.13.
 
 To install:
 ```bash
-go get github.com/filecoin-project/go-fil-markets/storagemarket
+go get github.com/chenjianmei111/go-fil-markets/storagemarket
 ```
 
 ## Operation
@@ -37,7 +37,7 @@ Deals are expected to survive a node restart; deals and related information are
  expected to be stored on disk.
  
 `storagemarket` communicates its deal operations and requested data via 
-                [go-data-transfer](https://github.com/filecoin-project/go-data-transfer) using 
+                [go-data-transfer](https://github.com/chenjianmei111/go-data-transfer) using 
                 [go-graphsync](https://github.com/ipfs/go-graphsync).
 
 ## Implementation
@@ -292,7 +292,7 @@ func NewClient(
     ```
 * `bs blockstore.Blockstore` is an IPFS blockstore for storing and retrieving data for deals.
      See [github.com/ipfs/go-ipfs-blockstore](github.com/ipfs/go-ipfs-blockstore).
-* `dataTransfer datatransfer.Manager` is an interface from [github.com/filecoin-project/go-data-transfer](https://github.com/filecoin-project/go-data-transfer)
+* `dataTransfer datatransfer.Manager` is an interface from [github.com/chenjianmei111/go-data-transfer](https://github.com/chenjianmei111/go-data-transfer)
    There is more than one implementation, but one way to create a new datatransfer.Manager is:
     ```go
     package graphsyncimpl
@@ -308,7 +308,7 @@ func NewClient(
     func NewDAGServiceDataTransfer(dag ipldformat.DAGService) datatransfer.Manager
     ```
     
-    Please see the [go-data-transfer repo](https://github.com/filecoin-project/go-data-transfer) for more information.
+    Please see the [go-data-transfer repo](https://github.com/chenjianmei111/go-data-transfer) for more information.
     
 * `discovery *discovery.Local` implements the `PeerResolver` interface. To initialize a new discovery.Local:
     ```go
@@ -352,7 +352,7 @@ See this repo's [piecestore module](../piecestore).
   that was written for your node.
 * `minerAddress address.Address` is the miner owner address.
 * `rt abi.RegisteredProof` is an int64 indicating the type of proof to use when generating a piece commitment (CommP).
-    see [github.com/filecoin-project/go-state-types/abi/sector.go](https://github.com/filecoin-project/specs-actors/blob/master/actors/abi/sector.go)
+    see [github.com/chenjianmei111/go-state-types/abi/sector.go](https://github.com/chenjianmei111/specs-actors/blob/master/actors/abi/sector.go)
     for the list and meaning of accepted values.
 * `storedAsk StoredAsk` is an interface for getting and adding storage Asks. It is implemented in storagemarket.
     To create a `StoredAsk`:
@@ -366,13 +366,13 @@ See this repo's [piecestore module](../piecestore).
 
 ## Technical Documentation
 
-* [GoDoc](https://godoc.org/github.com/filecoin-project/go-fil-markets/storagemarket) contains an architectural overview and robust API documentation
+* [GoDoc](https://godoc.org/github.com/chenjianmei111/go-fil-markets/storagemarket) contains an architectural overview and robust API documentation
 
 * Storage Client FSM diagram:
 
-[![Diagram of StorageClientFSM](../docs/storageclient.mmd.png)](https://raw.githubusercontent.com/filecoin-project/go-fil-markets/master/docs/storageclient.mmd.svg)
+[![Diagram of StorageClientFSM](../docs/storageclient.mmd.png)](https://raw.githubusercontent.com/chenjianmei111/go-fil-markets/master/docs/storageclient.mmd.svg)
 
 
 * Storage Provider FSM diagram:
 
-[![Diagram of StorageClientFSM](../docs/storageprovider.mmd.png)](https://raw.githubusercontent.com/filecoin-project/go-fil-markets/master/docs/storageprovider.mmd.svg)
+[![Diagram of StorageClientFSM](../docs/storageprovider.mmd.png)](https://raw.githubusercontent.com/chenjianmei111/go-fil-markets/master/docs/storageprovider.mmd.svg)

@@ -14,7 +14,7 @@ The storage market has to write this data before it completes the deal in order 
 
 ## Installation
 ```bash
-go get github.com/filecoin-project/go-fil-markets/piecestore
+go get github.com/chenjianmei111/go-fil-markets/piecestore
 ```
 
 ### PieceStore

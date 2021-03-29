@@ -7,12 +7,12 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/filecoin-project/go-statemachine/fsm"
+	"github.com/chenjianmei111/go-statemachine/fsm"
 
-	"github.com/filecoin-project/go-fil-markets/retrievalmarket"
-	retrievalimpl "github.com/filecoin-project/go-fil-markets/retrievalmarket/impl"
-	"github.com/filecoin-project/go-fil-markets/storagemarket"
-	storageimpl "github.com/filecoin-project/go-fil-markets/storagemarket/impl"
+	"github.com/chenjianmei111/go-fil-markets/retrievalmarket"
+	retrievalimpl "github.com/chenjianmei111/go-fil-markets/retrievalmarket/impl"
+	"github.com/chenjianmei111/go-fil-markets/storagemarket"
+	storageimpl "github.com/chenjianmei111/go-fil-markets/storagemarket/impl"
 )
 
 func storageDealStatusCmp(a, b fsm.StateKey) bool {

@@ -12,21 +12,21 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/filecoin-project/go-commp-utils/pieceio"
-	"github.com/filecoin-project/go-commp-utils/pieceio/cario"
-	datatransfer "github.com/filecoin-project/go-data-transfer"
-	"github.com/filecoin-project/go-data-transfer/channelmonitor"
-	dtimpl "github.com/filecoin-project/go-data-transfer/impl"
-	dtnet "github.com/filecoin-project/go-data-transfer/network"
-	"github.com/filecoin-project/go-state-types/abi"
-	"github.com/filecoin-project/go-state-types/big"
+	"github.com/chenjianmei111/go-commp-utils/pieceio"
+	"github.com/chenjianmei111/go-commp-utils/pieceio/cario"
+	datatransfer "github.com/chenjianmei111/go-data-transfer"
+	"github.com/chenjianmei111/go-data-transfer/channelmonitor"
+	dtimpl "github.com/chenjianmei111/go-data-transfer/impl"
+	dtnet "github.com/chenjianmei111/go-data-transfer/network"
+	"github.com/chenjianmei111/go-state-types/abi"
+	"github.com/chenjianmei111/go-state-types/big"
 
-	"github.com/filecoin-project/go-fil-markets/shared"
-	"github.com/filecoin-project/go-fil-markets/shared_testutil"
-	"github.com/filecoin-project/go-fil-markets/storagemarket"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/testharness"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/testharness/dependencies"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/testnodes"
+	"github.com/chenjianmei111/go-fil-markets/shared"
+	"github.com/chenjianmei111/go-fil-markets/shared_testutil"
+	"github.com/chenjianmei111/go-fil-markets/storagemarket"
+	"github.com/chenjianmei111/go-fil-markets/storagemarket/testharness"
+	"github.com/chenjianmei111/go-fil-markets/storagemarket/testharness/dependencies"
+	"github.com/chenjianmei111/go-fil-markets/storagemarket/testnodes"
 )
 
 var noOpDelay = testnodes.DelayFakeCommonNode{}
@@ -455,7 +455,7 @@ func TestRestartClient(t *testing.T) {
 
 		"ClientEventDataTransferInitiated": {
 			// This test can fail if client crashes without seeing a Provider DT complete
-			// See https://github.com/filecoin-project/lotus/issues/3966
+			// See https://github.com/chenjianmei111/lotus/issues/3966
 			stopAtClientEvent:   storagemarket.ClientEventDataTransferInitiated,
 			expectedClientState: storagemarket.StorageDealTransferring,
 			clientDelay:         noOpDelay,
@@ -471,7 +471,7 @@ func TestRestartClient(t *testing.T) {
 		"ClientEventFundingComplete": {
 			//Edge case : Provider begins the state machine on recieving a deal stream request
 			//client crashes -> restarts -> sends deal stream again -> state machine fails
-			// See https://github.com/filecoin-project/lotus/issues/3966
+			// See https://github.com/chenjianmei111/lotus/issues/3966
 			stopAtClientEvent:   storagemarket.ClientEventFundingComplete,
 			expectedClientState: storagemarket.StorageDealFundsReserved,
 			clientDelay:         noOpDelay,

@@ -6,12 +6,12 @@ import (
 	"github.com/ipfs/go-cid"
 	"golang.org/x/xerrors"
 
-	datatransfer "github.com/filecoin-project/go-data-transfer"
-	"github.com/filecoin-project/go-state-types/abi"
-	"github.com/filecoin-project/go-state-types/big"
-	"github.com/filecoin-project/go-statemachine/fsm"
+	datatransfer "github.com/chenjianmei111/go-data-transfer"
+	"github.com/chenjianmei111/go-state-types/abi"
+	"github.com/chenjianmei111/go-state-types/big"
+	"github.com/chenjianmei111/go-statemachine/fsm"
 
-	"github.com/filecoin-project/go-fil-markets/storagemarket"
+	"github.com/chenjianmei111/go-fil-markets/storagemarket"
 )
 
 // ClientEvents are the events that can happen in a storage client

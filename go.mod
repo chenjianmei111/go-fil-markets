@@ -1,21 +1,19 @@
-module github.com/filecoin-project/go-fil-markets
+module github.com/chenjianmei111/go-fil-markets
 
 go 1.13
 
 require (
-	github.com/filecoin-project/go-address v0.0.3
-	github.com/filecoin-project/go-cbor-util v0.0.0-20191219014500-08c40a1e63a2
-	github.com/filecoin-project/go-commp-utils v0.0.0-20201119054358-b88f7a96a434
-	github.com/filecoin-project/go-data-transfer v1.4.0
-	github.com/filecoin-project/go-ds-versioning v0.1.0
-	github.com/filecoin-project/go-multistore v0.0.3
-	github.com/filecoin-project/go-padreader v0.0.0-20200903213702-ed5fae088b20
-	github.com/filecoin-project/go-state-types v0.0.0-20201102161440-c8033295a1fc
-	github.com/filecoin-project/go-statemachine v0.0.0-20200925024713-05bd7c71fbfe
-	github.com/filecoin-project/go-statestore v0.1.0
-	github.com/filecoin-project/go-storedcounter v0.0.0-20200421200003-1c99c62e8a5b
-	github.com/filecoin-project/specs-actors v0.9.13
-	github.com/filecoin-project/specs-actors/v2 v2.3.2
+	github.com/chenjianmei111/go-address v0.0.6
+	github.com/chenjianmei111/go-commp-utils v0.2.0
+	github.com/chenjianmei111/go-data-transfer v1.5.0
+	github.com/chenjianmei111/go-ds-versioning v0.2.0
+	github.com/chenjianmei111/go-multistore v0.0.4
+	github.com/chenjianmei111/go-padreader v0.0.1
+	github.com/chenjianmei111/go-state-types v0.2.0
+	github.com/chenjianmei111/go-statemachine v1.0.0
+	github.com/chenjianmei111/go-statestore v0.1.2
+	github.com/chenjianmei111/specs-actors v0.9.14
+	github.com/chenjianmei111/specs-actors/v2 v2.3.5
 	github.com/hannahhoward/cbor-gen-for v0.0.0-20200817222906-ea96cece81f1
 	github.com/hannahhoward/go-pubsub v0.0.0-20200423002714-8d62886cc36e
 	github.com/ipfs/go-block-format v0.0.2
@@ -48,4 +46,4 @@ require (
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1
 )
 
-replace github.com/filecoin-project/filecoin-ffi => ./extern/filecoin-ffi
+replace github.com/chenjianmei111/filecoin-ffi => ./extern/filecoin-ffi
