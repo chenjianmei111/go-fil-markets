@@ -13,30 +13,30 @@ import (
 	cbg "github.com/whyrusleeping/cbor-gen"
 	"golang.org/x/xerrors"
 
-	"github.com/filecoin-project/go-address"
-	cborutil "github.com/filecoin-project/go-cbor-util"
-	"github.com/filecoin-project/go-commp-utils/pieceio"
-	"github.com/filecoin-project/go-commp-utils/pieceio/cario"
-	datatransfer "github.com/filecoin-project/go-data-transfer"
-	versioning "github.com/filecoin-project/go-ds-versioning/pkg"
-	versionedfsm "github.com/filecoin-project/go-ds-versioning/pkg/fsm"
-	"github.com/filecoin-project/go-multistore"
-	"github.com/filecoin-project/go-state-types/abi"
-	"github.com/filecoin-project/go-state-types/big"
-	"github.com/filecoin-project/go-state-types/exitcode"
-	"github.com/filecoin-project/go-statemachine/fsm"
-	"github.com/filecoin-project/specs-actors/actors/builtin/market"
+	"github.com/chenjianmei111/go-address"
+	cborutil "github.com/chenjianmei111/go-cbor-util"
+	"github.com/chenjianmei111/go-commp-utils/pieceio"
+	"github.com/chenjianmei111/go-commp-utils/pieceio/cario"
+	datatransfer "github.com/chenjianmei111/go-data-transfer"
+	versioning "github.com/chenjianmei111/go-ds-versioning/pkg"
+	versionedfsm "github.com/chenjianmei111/go-ds-versioning/pkg/fsm"
+	"github.com/chenjianmei111/go-multistore"
+	"github.com/chenjianmei111/go-state-types/abi"
+	"github.com/chenjianmei111/go-state-types/big"
+	"github.com/chenjianmei111/go-state-types/exitcode"
+	"github.com/chenjianmei111/go-statemachine/fsm"
+	"github.com/chenjianmei111/specs-actors/actors/builtin/market"
 
-	discoveryimpl "github.com/filecoin-project/go-fil-markets/discovery/impl"
-	"github.com/filecoin-project/go-fil-markets/retrievalmarket"
-	"github.com/filecoin-project/go-fil-markets/shared"
-	"github.com/filecoin-project/go-fil-markets/storagemarket"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/impl/clientstates"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/impl/clientutils"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/impl/dtutils"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/impl/requestvalidation"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/migrations"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/network"
+	discoveryimpl "github.com/chenjianmei111/go-fil-markets/discovery/impl"
+	"github.com/chenjianmei111/go-fil-markets/retrievalmarket"
+	"github.com/chenjianmei111/go-fil-markets/shared"
+	"github.com/chenjianmei111/go-fil-markets/storagemarket"
+	"github.com/chenjianmei111/go-fil-markets/storagemarket/impl/clientstates"
+	"github.com/chenjianmei111/go-fil-markets/storagemarket/impl/clientutils"
+	"github.com/chenjianmei111/go-fil-markets/storagemarket/impl/dtutils"
+	"github.com/chenjianmei111/go-fil-markets/storagemarket/impl/requestvalidation"
+	"github.com/chenjianmei111/go-fil-markets/storagemarket/migrations"
+	"github.com/chenjianmei111/go-fil-markets/storagemarket/network"
 )
 
 var log = logging.Logger("storagemarket_impl")
@@ -325,7 +325,7 @@ From then on, the statemachine controls the deal flow in the client. Other compo
 `SubscribeToEvents` on the Client. The Client also provides access to the node and network and other functionality through
 its implementation of the Client FSM's ClientDealEnvironment.
 
-Documentation of the client state machine can be found at https://godoc.org/github.com/filecoin-project/go-fil-markets/storagemarket/impl/clientstates
+Documentation of the client state machine can be found at https://godoc.org/github.com/chenjianmei111/go-fil-markets/storagemarket/impl/clientstates
 */
 func (c *Client) ProposeStorageDeal(ctx context.Context, params storagemarket.ProposeStorageDealParams) (*storagemarket.ProposeStorageDealResult, error) {
 	err := c.addMultiaddrs(ctx, params.Info.Address)

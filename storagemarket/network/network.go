@@ -6,7 +6,7 @@ import (
 	"github.com/libp2p/go-libp2p-core/peer"
 	ma "github.com/multiformats/go-multiaddr"
 
-	"github.com/filecoin-project/go-state-types/crypto"
+	"github.com/chenjianmei111/go-state-types/crypto"
 )
 
 // ResigningFunc allows you to resign data as needed when downgrading a response

@@ -5,7 +5,7 @@ The `filestore` module is a simple wrapper for os.File. It is used by [pieceio](
 
 ## Installation
 ```bash
-go get github.com/filecoin-project/go-fil-markets/filestore
+go get github.com/chenjianmei111/go-fil-markets/filestore
 ```
 
 ## FileStore

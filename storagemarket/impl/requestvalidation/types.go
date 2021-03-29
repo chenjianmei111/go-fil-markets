@@ -5,9 +5,9 @@ import (
 
 	"github.com/ipfs/go-cid"
 
-	datatransfer "github.com/filecoin-project/go-data-transfer"
+	datatransfer "github.com/chenjianmei111/go-data-transfer"
 
-	"github.com/filecoin-project/go-fil-markets/storagemarket"
+	"github.com/chenjianmei111/go-fil-markets/storagemarket"
 )
 
 //go:generate cbor-gen-for StorageDataTransferVoucher

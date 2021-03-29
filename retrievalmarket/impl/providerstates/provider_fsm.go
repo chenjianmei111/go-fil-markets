@@ -1,12 +1,12 @@
 package providerstates
 
 import (
-	datatransfer "github.com/filecoin-project/go-data-transfer"
-	"github.com/filecoin-project/go-state-types/abi"
-	"github.com/filecoin-project/go-state-types/big"
-	"github.com/filecoin-project/go-statemachine/fsm"
+	datatransfer "github.com/chenjianmei111/go-data-transfer"
+	"github.com/chenjianmei111/go-state-types/abi"
+	"github.com/chenjianmei111/go-state-types/big"
+	"github.com/chenjianmei111/go-statemachine/fsm"
 
-	rm "github.com/filecoin-project/go-fil-markets/retrievalmarket"
+	rm "github.com/chenjianmei111/go-fil-markets/retrievalmarket"
 )
 
 func recordError(deal *rm.ProviderDealState, err error) error {

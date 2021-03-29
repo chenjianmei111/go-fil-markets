@@ -32,9 +32,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/net/context"
 
-	dtnet "github.com/filecoin-project/go-data-transfer/network"
-	"github.com/filecoin-project/go-multistore"
-	"github.com/filecoin-project/go-storedcounter"
+	dtnet "github.com/chenjianmei111/go-data-transfer/network"
+	"github.com/chenjianmei111/go-multistore"
+	"github.com/chenjianmei111/go-storedcounter"
 )
 
 type Libp2pTestData struct {

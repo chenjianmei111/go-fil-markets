@@ -6,9 +6,9 @@ import (
 	"github.com/libp2p/go-libp2p-core/mux"
 	"github.com/libp2p/go-libp2p-core/peer"
 
-	cborutil "github.com/filecoin-project/go-cbor-util"
+	cborutil "github.com/chenjianmei111/go-cbor-util"
 
-	"github.com/filecoin-project/go-fil-markets/retrievalmarket"
+	"github.com/chenjianmei111/go-fil-markets/retrievalmarket"
 )
 
 type queryStream struct {

@@ -5,11 +5,11 @@ import (
 	"context"
 	"io"
 
-	datatransfer "github.com/filecoin-project/go-data-transfer"
-	"github.com/filecoin-project/go-multistore"
+	datatransfer "github.com/chenjianmei111/go-data-transfer"
+	"github.com/chenjianmei111/go-multistore"
 
-	rm "github.com/filecoin-project/go-fil-markets/retrievalmarket"
-	retrievalimpl "github.com/filecoin-project/go-fil-markets/retrievalmarket/impl"
+	rm "github.com/chenjianmei111/go-fil-markets/retrievalmarket"
+	retrievalimpl "github.com/chenjianmei111/go-fil-markets/retrievalmarket/impl"
 )
 
 // TestProviderDealEnvironment is a test implementation of ProviderDealEnvironment used

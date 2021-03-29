@@ -20,14 +20,14 @@ data storage.
 
 ## Background reading
 Please see the 
-[Filecoin Retrieval Market Specification](https://filecoin-project.github.io/specs/#systems__filecoin_markets__retrieval_market).
+[Filecoin Retrieval Market Specification](https://chenjianmei111.github.io/specs/#systems__filecoin_markets__retrieval_market).
 
 ## Installation
 The build process for retrievalmarket requires Go >= v1.13.
 
 To install:
 ```bash
-go get github.com/filecoin-project/go-fil-markets/retrievalmarket
+go get github.com/chenjianmei111/go-fil-markets/retrievalmarket
 ```
 
 ## Operation
@@ -42,7 +42,7 @@ Deals are expected to survive a node restart; deals and related information are
  expected to be stored on disk.
  
 `retrievalmarket` communicates its deal operations and requested data via 
-[go-data-transfer](https://github.com/filecoin-project/go-data-transfer) using 
+[go-data-transfer](https://github.com/chenjianmei111/go-data-transfer) using 
 [go-graphsync](https://github.com/ipfs/go-graphsync).
     
 Once required Node APIs are implemented and the retrievalmarket APIs are exposed to your desired
@@ -81,7 +81,7 @@ retrieval deal on the Filecoin blockchain. Implementation and timing of these ca
 responsibility and is not a part of `retrievalmarket`. For more information about how 
 to interact with the
 payment channel actor, see the 
-[github.com/filecoin-project/specs-actors](https://github.com/filecoin-project/specs-actors) repo.
+[github.com/chenjianmei111/specs-actors](https://github.com/chenjianmei111/specs-actors) repo.
 
 ## Implementation
 
@@ -133,7 +133,7 @@ func AllocateLane(paymentChannel address.Address) (uint64, error)
 Create a lane within `paymentChannel` so that calls to CreatePaymentVoucher will 
 automatically make vouchers only for the difference in total. Note that payment channel 
 Actors have a
-[lane limit](https://github.com/filecoin-project/specs-actors/blob/0df536f7e461599c818231aa0effcdaccbb74900/actors/builtin/paych/paych_actor.go#L20).
+[lane limit](https://github.com/chenjianmei111/specs-actors/blob/0df536f7e461599c818231aa0effcdaccbb74900/actors/builtin/paych/paych_actor.go#L20).
 
 #### CreatePaymentVoucher
 ```go
@@ -162,7 +162,7 @@ add `amount` to the channel, then return the payment channel address and `cid.Un
 If there isn't, construct a new payment channel actor with `amount` funds by posting 
 the corresponding message on chain, then return `address.Undef` and the posted message `cid.Cid`.
 For more information about how to construct a payment channel actor, see 
-[github.com/filecoin-project/specs-actors](https://github.com/filecoin-project/specs-actors)
+[github.com/chenjianmei111/specs-actors](https://github.com/chenjianmei111/specs-actors)
 
 #### WaitForPaymentChannelAddFunds
 ```go
@@ -262,7 +262,7 @@ func NewClient(
   
  * `storedCounter *storedcounter.StoredCounter` is a file-based stored counter used to generate new
   dealIDs. See
-   [github.com/filecoin-project/go-storedcounter](https://github.com/filecoin-project/go-storedcounter).
+   [github.com/chenjianmei111/go-storedcounter](https://github.com/chenjianmei111/go-storedcounter).
 
 ### RetrievalProvider
 ```go
@@ -291,13 +291,13 @@ See this repo's [piecestore module](../piecestore).
 
 ## Technical Documentation
 
-* [GoDoc](https://godoc.org/github.com/filecoin-project/go-fil-markets/retrievalmarket) contains an architectural overview and robust API documentation
+* [GoDoc](https://godoc.org/github.com/chenjianmei111/go-fil-markets/retrievalmarket) contains an architectural overview and robust API documentation
 
 * Retrieval Client FSM diagram:
 
-[![Diagram of RetrievalClientFSM](../docs/retrievalclient.mmd.png)](https://raw.githubusercontent.com/filecoin-project/go-fil-markets/master/docs/retrievalclient.mmd.svg)
+[![Diagram of RetrievalClientFSM](../docs/retrievalclient.mmd.png)](https://raw.githubusercontent.com/chenjianmei111/go-fil-markets/master/docs/retrievalclient.mmd.svg)
 
 
 * Retrieval Provider FSM diagram:
 
-[![Diagram of RetrievalClientFSM](../docs/retrievalprovider.mmd.png)](https://raw.githubusercontent.com/filecoin-project/go-fil-markets/master/docs/retrievalprovider.mmd.svg)
+[![Diagram of RetrievalClientFSM](../docs/retrievalprovider.mmd.png)](https://raw.githubusercontent.com/chenjianmei111/go-fil-markets/master/docs/retrievalprovider.mmd.svg)

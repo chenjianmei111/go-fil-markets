@@ -3,11 +3,11 @@ package network
 import (
 	"github.com/ipfs/go-cid"
 
-	"github.com/filecoin-project/go-address"
-	"github.com/filecoin-project/go-state-types/crypto"
-	"github.com/filecoin-project/specs-actors/actors/builtin/market"
+	"github.com/chenjianmei111/go-address"
+	"github.com/chenjianmei111/go-state-types/crypto"
+	"github.com/chenjianmei111/specs-actors/actors/builtin/market"
 
-	"github.com/filecoin-project/go-fil-markets/storagemarket"
+	"github.com/chenjianmei111/go-fil-markets/storagemarket"
 )
 
 //go:generate cbor-gen-for --map-encoding AskRequest AskResponse Proposal Response SignedResponse DealStatusRequest DealStatusResponse
