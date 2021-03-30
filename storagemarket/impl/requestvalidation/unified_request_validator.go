@@ -5,9 +5,9 @@ import (
 	"github.com/ipld/go-ipld-prime"
 	"github.com/libp2p/go-libp2p-core/peer"
 
-	datatransfer "github.com/filecoin-project/go-data-transfer"
+	datatransfer "github.com/chenjianmei111/go-data-transfer"
 
-	"github.com/filecoin-project/go-fil-markets/storagemarket"
+	"github.com/chenjianmei111/go-fil-markets/storagemarket"
 )
 
 // PushDeals gets deal states for Push validations

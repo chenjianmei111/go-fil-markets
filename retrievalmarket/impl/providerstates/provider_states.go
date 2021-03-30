@@ -7,13 +7,13 @@ import (
 
 	"golang.org/x/xerrors"
 
-	datatransfer "github.com/filecoin-project/go-data-transfer"
-	"github.com/filecoin-project/go-multistore"
-	"github.com/filecoin-project/go-statemachine"
-	"github.com/filecoin-project/go-statemachine/fsm"
+	datatransfer "github.com/chenjianmei111/go-data-transfer"
+	"github.com/chenjianmei111/go-multistore"
+	"github.com/chenjianmei111/go-statemachine"
+	"github.com/chenjianmei111/go-statemachine/fsm"
 
-	"github.com/filecoin-project/go-fil-markets/piecestore"
-	rm "github.com/filecoin-project/go-fil-markets/retrievalmarket"
+	"github.com/chenjianmei111/go-fil-markets/piecestore"
+	rm "github.com/chenjianmei111/go-fil-markets/retrievalmarket"
 )
 
 // ProviderDealEnvironment is a bridge to the environment a provider deal is executing in

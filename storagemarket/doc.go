@@ -3,7 +3,7 @@ Package storagemarket implements the Filecoin storage protocol.
 
 An overview of the storage protocol can be found in the Filecoin specification:
 
-https://filecoin-project.github.io/specs/#systems__filecoin_markets__storage_market
+https://chenjianmei111.github.io/specs/#systems__filecoin_markets__storage_market
 
 The following architectural components provide a brief overview of the design of
 the storagemarket module:
@@ -35,9 +35,9 @@ and we can ideally survive our Filecoin processes shutting down and restarting.
 
 The following diagrams visualize the statemachine flows for the client and the provider:
 
-Client FSM - https://raw.githubusercontent.com/filecoin-project/go-fil-markets/master/docs/storageclient.mmd.svg
+Client FSM - https://raw.githubusercontent.com/chenjianmei111/go-fil-markets/master/docs/storageclient.mmd.svg
 
-Provider FSM - https://raw.githubusercontent.com/filecoin-project/go-fil-markets/master/docs/storageprovider.mmd.svg
+Provider FSM - https://raw.githubusercontent.com/chenjianmei111/go-fil-markets/master/docs/storageprovider.mmd.svg
 
 Identifying Providers For A Deal
 
@@ -79,27 +79,27 @@ Major Dependencies
 
 Other libraries in go-fil-markets:
 
-https://github.com/filecoin-project/go-fil-markets/tree/master/filestore - used to store pieces and other
+https://github.com/chenjianmei111/go-fil-markets/tree/master/filestore - used to store pieces and other
 temporary data before it's transferred to either a sector or the PieceStore.
 
-https://github.com/filecoin-project/go-fil-markets/tree/master/pieceio - used to convert back and forth between raw
+https://github.com/chenjianmei111/go-fil-markets/tree/master/pieceio - used to convert back and forth between raw
 payload data and pieces that fit in sector. Also provides utilities for generating CommP.
 
-https://github.com/filecoin-project/go-fil-markets/tree/master/piecestore - used to write information about where data
+https://github.com/chenjianmei111/go-fil-markets/tree/master/piecestore - used to write information about where data
 lives in sectors so that it can later be retrieved.
 
-https://github.com/filecoin-project/go-fil-markets/tree/master/shared - types and utility functions shared with
+https://github.com/chenjianmei111/go-fil-markets/tree/master/shared - types and utility functions shared with
 retrievalmarket package.
 
 Other Filecoin Repos:
 
-https://github.com/filecoin-project/go-data-transfer - for transferring data, via go-graphsync
+https://github.com/chenjianmei111/go-data-transfer - for transferring data, via go-graphsync
 
-https://github.com/filecoin-project/go-statemachine - a finite state machine that tracks deal state
+https://github.com/chenjianmei111/go-statemachine - a finite state machine that tracks deal state
 
-https://github.com/filecoin-project/go-storedcounter - for generating and persisting unique deal IDs
+https://github.com/chenjianmei111/go-storedcounter - for generating and persisting unique deal IDs
 
-https://github.com/filecoin-project/specs-actors - the Filecoin actors
+https://github.com/chenjianmei111/specs-actors - the Filecoin actors
 
 IPFS Project Repos:
 

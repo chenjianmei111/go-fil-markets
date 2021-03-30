@@ -4,7 +4,7 @@ First, thank you for your interest in contributing to this project! Before you p
 changing code, please:
 
 1. Review all documentation for the module you're interested in.
-1. Look through the [issues for this repo](https://github.com/filecoin-project/go-fil-markets/issues) for relevant discussions.
+1. Look through the [issues for this repo](https://github.com/chenjianmei111/go-fil-markets/issues) for relevant discussions.
 1. If you have questions about an issue, post a comment in the issue.
 1. If you want to submit changes that aren't covered by an issue, file a new one with your proposal, outlining what problem you found/feature you want to implement, and how you intend to implement a solution.
 
@@ -13,7 +13,7 @@ For best results, before submitting a PR, make sure:
 1. It addresses only the one issue and does not make other, irrelevant changes.
 1. Your code conforms to our coding style guide.
 1. You have adequate test coverage (this should be indicated by CI results anyway).
-1. If you like, check out [current PRs](https://github.com/filecoin-project/go-fil-markets/pulls) to see how others do it.
+1. If you like, check out [current PRs](https://github.com/chenjianmei111/go-fil-markets/pulls) to see how others do it.
 
 Special Note:
 If editing README.md, please conform to the [standard readme specification](https://github.com/RichardLitt/standard-readme/blob/master/spec.md).
@@ -61,7 +61,7 @@ import (
         <single, empty line>
         [external packages]
         <single, empty line>
-        [other-filecoin-project packages]
+        [other-chenjianmei111 packages]
         <single, empty line>
         [go-fil-markets packages]
 )
@@ -81,9 +81,9 @@ import (
 	ipld "github.com/ipfs/go-ipld-format"
 	"github.com/stretchr/testify/assert"
 
-	datatransfer "github.com/filecoin-project/go-data-transfer"
+	datatransfer "github.com/chenjianmei111/go-data-transfer"
 	
-	"github.com/filecoin-project/go-fil-markets/filestore/file"
+	"github.com/chenjianmei111/go-fil-markets/filestore/file"
 )
 ```
 

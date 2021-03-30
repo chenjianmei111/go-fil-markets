@@ -6,9 +6,9 @@ import (
 	"github.com/libp2p/go-libp2p-core/peer"
 	"golang.org/x/exp/rand"
 
-	datatransfer "github.com/filecoin-project/go-data-transfer"
+	datatransfer "github.com/chenjianmei111/go-data-transfer"
 
-	"github.com/filecoin-project/go-fil-markets/shared"
+	"github.com/chenjianmei111/go-fil-markets/shared"
 )
 
 // TestChannelParams are params for a new test data transfer channel

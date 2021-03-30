@@ -3,11 +3,11 @@ package migrations
 import (
 	"github.com/ipfs/go-cid"
 
-	versioning "github.com/filecoin-project/go-ds-versioning/pkg"
-	"github.com/filecoin-project/go-ds-versioning/pkg/versioned"
-	"github.com/filecoin-project/go-state-types/abi"
+	versioning "github.com/chenjianmei111/go-ds-versioning/pkg"
+	"github.com/chenjianmei111/go-ds-versioning/pkg/versioned"
+	"github.com/chenjianmei111/go-state-types/abi"
 
-	"github.com/filecoin-project/go-fil-markets/piecestore"
+	"github.com/chenjianmei111/go-fil-markets/piecestore"
 )
 
 //go:generate cbor-gen-for PieceInfo0 DealInfo0 BlockLocation0 PieceBlockLocation0 CIDInfo0

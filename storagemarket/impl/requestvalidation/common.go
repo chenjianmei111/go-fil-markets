@@ -6,9 +6,9 @@ import (
 	"github.com/libp2p/go-libp2p-core/peer"
 	"golang.org/x/xerrors"
 
-	datatransfer "github.com/filecoin-project/go-data-transfer"
+	datatransfer "github.com/chenjianmei111/go-data-transfer"
 
-	"github.com/filecoin-project/go-fil-markets/storagemarket"
+	"github.com/chenjianmei111/go-fil-markets/storagemarket"
 )
 
 // ValidatePush validates a push request received from the peer that will send data
