@@ -52,12 +52,10 @@ github.com/chenjianmei111/go-bitfield v0.2.5 h1:l2WeLVB9tonEvj/LjRM1XmbQkVV7f73G
 github.com/chenjianmei111/go-bitfield v0.2.5/go.mod h1:QxW4b7xi+kgwX6u6AIcTc3lxTWdiELveQk4581pfYgA=
 github.com/chenjianmei111/go-cbor-util v0.0.0-20210329091012-4d7bc9b082a7 h1:h7MKRTt3Oi7HJ4q/07lXt8bdYdVfrM4fEb+BQCgRFuU=
 github.com/chenjianmei111/go-cbor-util v0.0.0-20210329091012-4d7bc9b082a7/go.mod h1:ewfWMpop/drIrBHDXu8mSY6cXT/Qw7nwLY9I4ZZOspQ=
-github.com/chenjianmei111/go-commp-utils v0.2.10 h1:ScoZMFrQPU0rrQ5UM3fNWhd7+SYBac4+z506/WnWsD0=
-github.com/chenjianmei111/go-commp-utils v0.2.10/go.mod h1:OYsxibhAB+6JtD1FXFE4P/32qycWSw5mEEcwz+/ctBk=
 github.com/chenjianmei111/go-crypto v0.0.0-20210329075142-4df494a4f504 h1:nq+UJ2oz2EXvT9IrDNRJhaTZMg01l6alyciK934g3Q0=
 github.com/chenjianmei111/go-crypto v0.0.0-20210329075142-4df494a4f504/go.mod h1:fwBQMT+swwTtWG/ksGwzshUkp8A+YCR7BgrOrPwv1KY=
-github.com/chenjianmei111/go-data-transfer v1.7.0 h1:FGFsXU/Py7+LgygSQ7zUmPCnuU879AQ/jB7XkVSBiAg=
-github.com/chenjianmei111/go-data-transfer v1.7.0/go.mod h1:QaUiaCn2bvY9svCCLAziGmvEZqM8p0QkqE6+HW+wsjY=
+github.com/chenjianmei111/go-data-transfer v1.7.1 h1:aTyI+t+SE67YqdjOhNxLSq2VrcRyYjdDKx2vLPbgXP8=
+github.com/chenjianmei111/go-data-transfer v1.7.1/go.mod h1:0BTWgPUDxg6GXo1giQNMTsJ+ZXndSBjb86KElkZKhR0=
 github.com/chenjianmei111/go-ds-versioning v0.2.0 h1:BsxsQL1lRrYe6vQa7LOq7pIZ0+dP9j8Olwt42ACGwsE=
 github.com/chenjianmei111/go-ds-versioning v0.2.0/go.mod h1:3wY/vVa43ebuPnrnG7bchtxz1sCzlCyLts/JQllncoU=
 github.com/chenjianmei111/go-fil-commcid v0.0.1 h1:xLAbYcx488/A0g6Q1wfqq086g/kfqLRH5gcE7Lr1no8=
@@ -1052,6 +1050,7 @@ gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 h1:uRGJdciOHaEIrze2W8Q3AKkep
 gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7/go.mod h1:dt/ZhP58zS4L8KSrWDmTeBkI65Dw0HsyUHuEVlX15mw=
 gopkg.in/yaml.v2 v2.2.1/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
 gopkg.in/yaml.v2 v2.2.2/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
+gopkg.in/yaml.v2 v2.2.4 h1:/eiJrUcujPVeJ3xlSWaiNi3uSVmDGBK1pDHUHAnao1I=
 gopkg.in/yaml.v2 v2.2.4/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
 gopkg.in/yaml.v2 v2.3.0 h1:clyUAQHOM3G0M3f5vQj7LuJrETvjVot3Z5el9nffUtU=
 gopkg.in/yaml.v2 v2.3.0/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
