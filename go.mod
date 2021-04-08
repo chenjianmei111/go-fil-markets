@@ -8,7 +8,7 @@ require (
 	github.com/chenjianmei111/go-address v0.0.6
 	github.com/chenjianmei111/go-cbor-util v0.0.0-20210329091012-4d7bc9b082a7
 	github.com/chenjianmei111/go-commp-utils v0.2.11
-	github.com/chenjianmei111/go-data-transfer v1.7.1
+	github.com/chenjianmei111/go-data-transfer v1.7.2
 	github.com/chenjianmei111/go-ds-versioning v0.2.0
 	github.com/chenjianmei111/go-multistore v0.0.4
 	github.com/chenjianmei111/go-padreader v0.0.1
@@ -24,7 +24,7 @@ require (
 	github.com/ipfs/go-blockservice v0.1.4
 	github.com/ipfs/go-cid v0.0.7
 	github.com/ipfs/go-datastore v0.4.5
-	github.com/ipfs/go-graphsync v0.8.0
+	github.com/ipfs/go-graphsync v0.5.2
 	github.com/ipfs/go-ipfs-blockstore v1.0.3
 	github.com/ipfs/go-ipfs-blocksutil v0.0.1
 	github.com/ipfs/go-ipfs-chunker v0.0.5
